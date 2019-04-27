@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Luyen tap voi If...Else</title>
+</head>
+<body>
+	<script>
+		let username = prompt("Who's this ?");
+
+		if (username == 'Admin') {
+			let pass = prompt("Pass ???");
+			if (pass == 'TheMaster') {
+				alert('Welcome');
+			} else if (pass == null) {
+				alert('Canceled');
+			} else {
+				alert('Wrong Password');
+			}
+		} else if (username == null) {
+			alert('Canceled');
+		} else {
+			alert('Wrong Pass');
+		}
+
+	</script>
+</body>
+</html>
